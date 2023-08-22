@@ -1,0 +1,18 @@
+run_test:
+  before_script:
+    - echo "Preparing test data"
+  script:
+    - echo "Runninig test...."
+  after_script:
+    - echo "Cleaning up temprory data"
+
+bulid_image:
+  script:
+    - echo " Bulding a docker image"
+    - echo "Tagging a docker image"
+
+push_image:
+  script:
+    - echo "Loggig into docker registry"
+    - echo "pushing docker image to registry..."
+
